@@ -7,3 +7,18 @@
 - [Redis Package](https://pypi.org/project/redis/)
 
 - [Celery Official Doc Link](https://docs.celeryq.dev/en/stable/django/first-steps-with-django.html)
+
+- Install redis on linux -
+    ```bash
+    sudo snap install redis
+    ```
+
+- Start redis server -
+    ```bash
+    redis-server
+    ```
+
+- Start Celery Worker -
+    ```bash
+    celery -A myceleryproject worker -l info 
+    ```
