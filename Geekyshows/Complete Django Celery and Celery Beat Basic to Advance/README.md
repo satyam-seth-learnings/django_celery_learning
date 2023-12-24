@@ -18,6 +18,15 @@
     redis-server
     ```
 
+- See all redis keys
+    ```bash
+    redis-cli
+    ```
+
+    ```bash
+    keys *
+    ```
+
 - Start Celery Worker -
     ```bash
     celery -A myceleryproject worker -l info 
