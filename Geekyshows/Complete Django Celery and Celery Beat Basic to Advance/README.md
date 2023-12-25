@@ -35,3 +35,8 @@
     ```bash
     celery -A myceleryproject worker -l info 
     ```
+
+- Start Celery Beat for Periodic Task
+    ```bash
+    celery -A myceleryproject beat -l info 
+    ```
