@@ -22,6 +22,16 @@ def add(x, y):
     sleep(20)
     return x + y
 
+# Method 2 
+app.conf.beat_schedule = {
+        'every-10-seconds':{
+        'task':'myapp.tasks.clear_session_cache',
+        'schedule':10,
+        'args':('11111', )
+    }
+    # Add more periodic tasks as needed
+}
+
 # @app.task(bind=True, ignore_result=True)
 # def debug_task(self):
 #     print(f'Request: {self.request!r}')
