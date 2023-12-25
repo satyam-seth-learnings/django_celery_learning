@@ -2,6 +2,8 @@ import os
 
 from celery import Celery
 from time import sleep
+from datetime import timedelta
+from celery.schedules import crontab
 
 # Set the default Django settings module for the 'celery' program.
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myceleryproject.settings')
@@ -22,12 +24,32 @@ def add(x, y):
     sleep(20)
     return x + y
 
-# Method 2 
+# # Method 2 
+# app.conf.beat_schedule = {
+#         'every-10-seconds': {
+#         'task': 'myapp.tasks.clear_session_cache',
+#         'schedule': 10,
+#         'args': ('11111', )
+#     }
+#     # Add more periodic tasks as needed
+# }
+
+# # Using timedelta
+# app.conf.beat_schedule = {
+#         'every-10-seconds': {
+#         'task': 'myapp.tasks.clear_session_cache',
+#         'schedule': timedelta(seconds=10),
+#         'args': ('11111', )
+#     }
+#     # Add more periodic tasks as needed
+# }
+
+# Using crontab
 app.conf.beat_schedule = {
-        'every-10-seconds':{
-        'task':'myapp.tasks.clear_session_cache',
-        'schedule':10,
-        'args':('11111', )
+        'every-10-seconds': {
+        'task': 'myapp.tasks.clear_session_cache',
+        'schedule': crontab(minute='*/1'),
+        'args': ('11111', )
     }
     # Add more periodic tasks as needed
 }
