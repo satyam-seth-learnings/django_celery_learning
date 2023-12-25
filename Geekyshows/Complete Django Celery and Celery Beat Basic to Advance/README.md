@@ -6,6 +6,8 @@
 
 - [Django Celery Results Package](https://pypi.org/project/django-celery-results/)
 
+- [Django Celery Beat Package](https://pypi.org/project/django-celery-beat/)
+
 - [Redis Package](https://pypi.org/project/redis/)
 
 - [Celery Official Doc Link](https://docs.celeryq.dev/en/stable/django/first-steps-with-django.html)
