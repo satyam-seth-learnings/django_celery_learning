@@ -12,6 +12,8 @@
 
 - [Celery Configuration Doc Link](https://docs.celeryq.dev/en/stable/userguide/configuration.html)
 
+- [Celery Periodic Task Doc Link](https://docs.celeryq.dev/en/stable/userguide/periodic-tasks.html)
+
 - Install redis on linux -
     ```bash
     sudo snap install redis
