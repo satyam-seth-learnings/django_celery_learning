@@ -4,6 +4,8 @@
 
 - [Celery Package](https://pypi.org/project/celery/)
 
+- [Django Celery Results Package](https://pypi.org/project/django-celery-results/)
+
 - [Redis Package](https://pypi.org/project/redis/)
 
 - [Celery Official Doc Link](https://docs.celeryq.dev/en/stable/django/first-steps-with-django.html)
