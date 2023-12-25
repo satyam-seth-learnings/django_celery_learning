@@ -10,6 +10,8 @@
 
 - [Celery Official Doc Link](https://docs.celeryq.dev/en/stable/django/first-steps-with-django.html)
 
+- [Celery Configuration Doc Link](https://docs.celeryq.dev/en/stable/userguide/configuration.html)
+
 - Install redis on linux -
     ```bash
     sudo snap install redis
